@@ -13,7 +13,7 @@ const Hero = () => {
               className='rounded-full mb-4 w-32 h-32 object-cover ring-2 ring-primary' />
         </div>
 
-        <h1 className='text-4xl md:text-4xl font-bold mb-6'>Hi, I'm <span className='text-primary'>Mohamed Hassan</span> </h1>
+        <h1 className='text-4xl md:text-4xl font-bold mb-6'>Hi, I&apos;m <span className='text-primary'>Mohamed Hassan</span> </h1>
 
         <p className='mb-6 text-xl md:text-2xl text-gray-600 dark:text-gray-300'>Web Developer | React | Next.Js</p>
 
