@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react'
 import { FaGithub , FaLinkedin , FaFacebook , FaInstagram} from "react-icons/fa";
 import Link from 'next/link';
-import { projects } from '../../contents/project';
+
 
 const Hero = () => {
   return (
@@ -15,7 +15,7 @@ const Hero = () => {
 
         <h1 className='text-4xl md:text-4xl font-bold mb-6'>Hi, I'm <span className='text-primary'>Mohamed Hassan</span> </h1>
 
-        <p className='mb-6 text-xl md:text-2xl text-gray-600 dark:text-gray-300'>Web Developer | React | Next.Js | UI/UX Design</p>
+        <p className='mb-6 text-xl md:text-2xl text-gray-600 dark:text-gray-300'>Web Developer | React | Next.Js</p>
 
         <div className='flex justify-center space-x-4 mb-8'>
           <a href="https://github.com" target="_blank" className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors 
