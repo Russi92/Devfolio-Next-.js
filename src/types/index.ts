@@ -1,5 +1,6 @@
 
 export interface Project {
+    id :number,
     title : string;
     description : string;
     technologies : string[];
@@ -9,6 +10,7 @@ export interface Project {
 }
 
 export interface Blog {
+    id :number,
     title : string;
     excerpt : string;
     date : string;
