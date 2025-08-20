@@ -15,7 +15,7 @@ const Hero = () => {
 
         <h1 className='text-4xl md:text-4xl font-bold mb-6'>Hi, I&apos;m <span className='text-primary'>Mohamed Hassan</span> </h1>
 
-        <p className='mb-6 text-xl md:text-2xl text-gray-600 dark:text-gray-300'>Web Developer | Front-End | React | Next.Js</p>
+        <p className='mb-6 text-xl md:text-2xl text-gray-600 dark:text-gray-300'>Web Developer | FrontEnd | React | Next.Js</p>
 
         <div className='flex justify-center space-x-4 mb-8'>
           <a href="https://github.com" target="_blank" className='text-2xl text-gray-600 hover:text-primary dark:text-gray-300 transition-colors 
