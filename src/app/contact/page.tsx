@@ -19,7 +19,6 @@ export default function ContactPage() {
           <div className="space-y-4">
             <div className="flex items-center gap-4">
                 <FaEnvelope className="w-6 h-6 text-primary"/>
-
                 <div>
                     <h3 className="font-semibold">Email: </h3>
                     <Link href="mailto:mr.rossy2020@gmail.com" className="text-secondary 
