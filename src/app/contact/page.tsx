@@ -12,7 +12,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
 
           <p className="text-secondary md:w-2/3">
-            I'm always open to discussing exciting projects, innovative ideas,
+            I&apos;m always open to discussing exciting projects, innovative ideas,
             or meaningful opportunities where I can contribute and add value.
           </p>
           <div className="space-y-4">
