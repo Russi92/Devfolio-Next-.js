@@ -8,11 +8,15 @@ const Footer = () => {
       <div className="container max-w-7xl px-4 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <Link href="/" className="text-xl font-bold text-primary">
-              Devfolio&trade;
-            </Link>
+            {/* <Link href="/" className="text-xl font-bold text-primary">
+              Portfolio&trade;
+            </Link> */}
+            <Link href="/" className="text-2xl font-bold bg-gradient-to-l from-foreground to-primary bg-clip-text text-transparent opacity-95">
+            Portfolio&trade;
+          </Link>
+          
             <p className="text-sm text-white/60 mt-2">
-              {new Date().getFullYear()} Devfolio. All rights reserved Make By
+              {new Date().getFullYear()} Portfolio. All rights reserved Make By
               Eng.Mohamed Hassan Front-End Developer
             </p>
           </div>

@@ -33,8 +33,11 @@ export default function Navbar() {
       <div className="container max-w-7xl mx-auto px-4">
         {/* desktop menu */}
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="text-xl font-bold text-primary">
-            Devfolio&trade;
+          {/* <Link href="/" className="text-xl font-bold text-primary">
+          Portfolio&trade;
+          </Link> */}
+          <Link href="/" className="text-2xl font-bold bg-gradient-to-l from-foreground to-primary bg-clip-text text-transparent opacity-95">
+            Portfolio&trade;
           </Link>
 
           {/* desktop menu */}

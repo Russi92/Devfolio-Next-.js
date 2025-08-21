@@ -59,7 +59,7 @@ export const projects : Project[] = [
       },
       {
         id : 7,
-        title: 'Devfolio',
+        title: 'Portfolio',
         description: 'A personal developer portfolio showcasing a collection of modern web projects, applications, and creative experiments.',
         technologies: ['React.js', 'Next.js' ,'Tailwind CSS'],
         githubLink: 'https://github.com/Russi92/Devfolio-Next-.js',
