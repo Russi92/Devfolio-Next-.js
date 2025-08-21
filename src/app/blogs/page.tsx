@@ -1,14 +1,25 @@
+"use client";   
+
+
 import { blogs } from "@/contents/blogs";
 import Link from "next/link";
-import {FaCalendarAlt , FaClock} from "react-icons/fa"
+import {FaCalendarAlt , FaClock} from "react-icons/fa";
+import {motion} from "framer-motion";
+import { fadeInUp, scaleIn } from "../utils/animations";
 
 
 export default function Blogs() {
     return(
         <section className="container max-w-7xl mx-auto p-20">
-            <h1 className="text-4xl text-center font-bold mb-16">Blogs Posts</h1>
+            <motion.h1 
+            {...scaleIn}
+            transition={{delay: 0.2}}
+            className="text-4xl text-center font-bold mb-16">Blogs Posts</motion.h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8 '>
+            <motion.div 
+            {...fadeInUp}
+            transition={{delay: 0.6}}
+            className='grid grid-cols-1 md:grid-cols-3 gap-8 '>
             {
                 blogs.map((blog) => (
                     <article key={blog.id} className='bg-white dark:bg-dark/50 rounded-lg shadow-md p-6
@@ -37,7 +48,7 @@ export default function Blogs() {
                     </article>
                 ))
             }
-        </div>
+        </motion.div>
         </section>
     )
 }

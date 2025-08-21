@@ -1,16 +1,29 @@
+"use client";
+
 import { projects } from "@/contents/project";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub ,FaExternalLinkAlt} from "react-icons/fa";
+import {motion} from "framer-motion";
+import { fadeInUp, scaleIn } from "../utils/animations";
 
 
 export default function Projects(){
     return(
         <section className="container max-w-7xl mx-auto py-20">
-            <h1 className="text-4xl text-center font-bold mb-4">My Projects</h1>
-            <p className="text-lg text-secondary mb-24 text-center">Here are some of my recent projects. Click on the links to view the code or live demo.</p>
+            <motion.h1 
+            {...scaleIn}
+            transition={{delay: 0.2}}
+            className="text-4xl text-center font-bold mb-4">My Projects</motion.h1>
+            <motion.p 
+            {...scaleIn}
+            transition={{delay: 0.4}}
+            className="text-lg text-secondary mb-24 text-center">Here are some of my recent projects. Click on the links to view the code or live demo.</motion.p>
 
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
+            <motion.div 
+            {...fadeInUp}
+            transition={{delay: 0.6}}
+            className='grid grid-cols-1 md:grid-cols-3 gap-8'>
                     {
                         projects.map((project) => (
                             <article key={project.title} className='bg-white dark:bg-dark/50 rounded-lg shadow-md p-6 duration-300 ease-in-out 
@@ -50,7 +63,7 @@ export default function Projects(){
                             </article>
                         ))
                     }
-                </div>
+                </motion.div>
         </section>
     )
 }

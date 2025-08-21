@@ -18,6 +18,7 @@ import {
 } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiRedux, SiMui } from "react-icons/si";
 import type { IconType } from "react-icons";
+import { fadeInUp, scaleIn } from "../utils/animations";
 
 type TabType = "frontend" | "backend" | "technical";
 
@@ -85,26 +86,38 @@ export default function About() {
 
   return (
     <div className="container max-w-7xl mx-auto py-20">
-      <h1 className="text-center text-4xl font-bold">About Me</h1>
+      <motion.h1 
+      {...scaleIn}
+      transition={{delay: 0.2}}
+      className="text-center text-4xl font-bold">About Me</motion.h1>
 
       {/* bio section */}
       <section className="mb-16 mt-5">
-        <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
+        <motion.p 
+        {...scaleIn}
+        transition={{delay: 0.4}}
+        className="text-lg text-secondary max-w-3xl mx-auto text-center">
           ✨ I am a passionate Full Stack Developer by background, currently
           specializing in Frontend development with React.js and Next.js. Over
           the past 2 years, I have been building modern, scalable, and
           user-centric web applications, with a strong focus on performance and
           clean code. My goal is to deliver impactful digital experiences and
           continuously grow by embracing new technologies and best practices.
-        </p>
+        </motion.p>
       </section>
 
       {/* skills section */}
       <section className="mb-16">
-        <h1 className="section-title mb-6 text-center">Skills</h1>
+        <motion.h1 
+        {...fadeInUp}
+        transition={{delay: 0.6}}
+        className="section-title mb-6 text-center">Skills</motion.h1>
 
         {/* buttons */}
-        <div className="flex justify-center gap-4 mb-8">
+        <motion.div 
+        {...fadeInUp}
+        transition={{delay: 0.9}}
+        className="flex justify-center gap-4 mb-8">
           <button
             onClick={() => setActiveTab("frontend")}
             className={`px-4 py-2 rounded-lg cursor-pointer font-bold ${
@@ -135,16 +148,19 @@ export default function About() {
           >
             Technical Skills
           </button>
-        </div>
+        </motion.div>
 
         {/* dynamic title */}
-        <h3 className="text-xl font-semibold mb-6 text-center capitalize">
+        <motion.h3 
+        {...fadeInUp}
+        transition={{delay: 0.9}}
+        className="text-xl font-semibold mb-6 text-center capitalize">
           {activeTab === "frontend"
             ? "Frontend"
             : activeTab === "backend"
             ? "Backend"
             : "Programming Concepts"}
-        </h3>
+        </motion.h3>
 
         {/* animated cards */}
         <AnimatePresence mode="wait">{cards[activeTab]}</AnimatePresence>
