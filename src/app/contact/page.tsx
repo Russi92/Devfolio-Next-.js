@@ -15,7 +15,6 @@ export default function ContactPage() {
             I'm always open to discussing exciting projects, innovative ideas,
             or meaningful opportunities where I can contribute and add value.
           </p>
-
           <div className="space-y-4">
             <div className="flex items-center gap-4">
                 <FaEnvelope className="w-6 h-6 text-primary"/>
